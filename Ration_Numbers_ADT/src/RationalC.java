@@ -1,11 +1,10 @@
-/* file: Rational.java
-   author: CS2 Staff
 
-   CSCI 1102 Computer Science 2
-
-   An implementation of a simple ADT of rational numbers.
-   See Sedgewick & Wayne problem 16 Section 1.2.
+/*
+  An implementation of a simple ADT for rational numbers.
+  Creates class methods that allow for the addition, subtraction,
+  multiplication, division, and comparison of two rational numbers.
 */
+
 public class RationalC implements Rational {
 
   private int numerator;
@@ -32,35 +31,35 @@ public class RationalC implements Rational {
   }
 
   public Rational plus(Rational b) {
-    int common_denominator = this.getDenominator() * b.getDenominator();
-    int new_this_numerator = this.getNumerator() * b.getDenominator();
-    int new_b_numerator = b.getNumerator() * this.getDenominator();
-    int new_numerator = new_this_numerator + new_b_numerator;
-    int gcd = gcd(new_numerator, common_denominator);
-    return new RationalC(new_numerator/gcd, common_denominator/gcd);
+    int commonDenominator = this.getDenominator() * b.getDenominator();
+    int newThisNumerator = this.getNumerator() * b.getDenominator();
+    int newBNumerator = b.getNumerator() * this.getDenominator();
+    int newNumerator = newThisNumerator + newBNumerator;
+    int gcd = gcd(newNumerator, commonDenominator);
+    return new RationalC(newNumerator/gcd, commonDenominator/gcd);
   }
 
   public Rational subtract(Rational b) {
-    int common_denominator = this.getDenominator() * b.getDenominator();
-    int new_this_numerator = this.getNumerator() * b.getDenominator();
-    int new_b_numerator = b.getNumerator() * this.getDenominator();
-    int new_numerator = new_this_numerator - new_b_numerator;
-    int gcd = gcd(new_numerator, common_denominator);
-    return new RationalC(new_numerator/gcd, common_denominator/gcd);
+    int commonDenominator = this.getDenominator() * b.getDenominator();
+    int newThisNumerator = this.getNumerator() * b.getDenominator();
+    int newBNumerator = b.getNumerator() * this.getDenominator();
+    int newNumerator = newThisNumerator - newBNumerator;
+    int gcd = gcd(newNumerator, commonDenominator);
+    return new RationalC(newNumerator/gcd, commoDenominator/gcd);
   }
 
   public Rational multiply(Rational b) {
-    int new_denominator = this.getDenominator() * b.getDenominator();
-    int new_numerator = this.getNumerator() * b.getNumerator();
-    int gcd = gcd(new_numerator, new_denominator);
-    return new RationalC(new_numerator/gcd, new_denominator/gcd);
+    int newDenominator = this.getDenominator() * b.getDenominator();
+    int newNumerator = this.getNumerator() * b.getNumerator();
+    int gcd = gcd(newNumerator, newDenominator);
+    return new RationalC(newNumerator/gcd, newDenominator/gcd);
   }
 
   public Rational divide(Rational b) {
-    int new_denominator = this.getDenominator() * b.getNumerator();
-    int new_numerator = this.getNumerator() * b.getDenominator();
-    int gcd = gcd(new_numerator, new_denominator);
-    return new RationalC(new_numerator/gcd, new_denominator/gcd);
+    int newDenominator = this.getDenominator() * b.getNumerator();
+    int newNumerator = this.getNumerator() * b.getDenominator();
+    int gcd = gcd(newNumerator, newDenominator);
+    return new RationalC(newNumerator/gcd, newDenominator/gcd);
   }
 
   public boolean equal(Rational b) {
@@ -72,13 +71,13 @@ public class RationalC implements Rational {
   }
 
   public int compareTo(Rational b) {
-    int common_denominator = this.getDenominator() * b.getDenominator();
-    int new_this_numerator = this.getNumerator() * b.getDenominator();
-    int new_b_numerator = b.getNumerator() * this.getDenominator();
+    int commonDenominator = this.getDenominator() * b.getDenominator();
+    int newThisNumerator = this.getNumerator() * b.getDenominator();
+    int newBNumerator = b.getNumerator() * this.getDenominator();
 
-    if (new_this_numerator < new_b_numerator) {
+    if (newThisNumerator < newBNumerator) {
       return -1;
-    } else if (new_this_numerator > new_b_numerator) {
+    } else if (newThisNumerator > newThisNumerator) {
       return 1;
     }
     return 0;
@@ -89,7 +88,7 @@ public class RationalC implements Rational {
   }
 
   // Some unit testing.
-  //
+
   public static void main(String[] args) {
     Rational
       r1 = new RationalC(3, 9),
