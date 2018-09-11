@@ -45,7 +45,7 @@ public class RationalC implements Rational {
     int newBNumerator = b.getNumerator() * this.getDenominator();
     int newNumerator = newThisNumerator - newBNumerator;
     int gcd = gcd(newNumerator, commonDenominator);
-    return new RationalC(newNumerator/gcd, commoDenominator/gcd);
+    return new RationalC(newNumerator/gcd, commonDenominator/gcd);
   }
 
   public Rational multiply(Rational b) {
@@ -63,21 +63,17 @@ public class RationalC implements Rational {
   }
 
   public boolean equal(Rational b) {
-    if (this.getNumerator() == b.getNumerator() &&
-        this.getDenominator() == b.getDenominator()) {
-          return true;
-    }
-    return false;
+    return (this.getNumerator() == b.getNumerator() &&
+            this.getDenominator() == b.getDenominator());
   }
 
   public int compareTo(Rational b) {
-    int commonDenominator = this.getDenominator() * b.getDenominator();
     int newThisNumerator = this.getNumerator() * b.getDenominator();
     int newBNumerator = b.getNumerator() * this.getDenominator();
 
     if (newThisNumerator < newBNumerator) {
       return -1;
-    } else if (newThisNumerator > newThisNumerator) {
+    } else if (newThisNumerator > newBNumerator) {
       return 1;
     }
     return 0;
