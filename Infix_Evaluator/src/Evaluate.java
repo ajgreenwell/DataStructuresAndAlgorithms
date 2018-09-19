@@ -1,5 +1,5 @@
 import edu.princeton.cs.algs4.StdIn;
-import java.util.*;
+import java.util.HashMap;
 /*
 The following is an application that utilizes the ResizingArrayStack
 implementation. This app takes mathematical infix expressions as input
@@ -67,8 +67,7 @@ public class Evaluate {
         // read token
         String s = StdIn.readString();
         // now test token for various conditions...
-        if (s.equals(" "));
-        else if (isNumber(s))      vals.push(Double.parseDouble(s));
+        if (isNumber(s))           vals.push(Double.parseDouble(s));
         else if (s.equals("("))    ops.push(s);
         // if it's a ")", we need to evaluate the expression
         else if (s.equals(")")) {
