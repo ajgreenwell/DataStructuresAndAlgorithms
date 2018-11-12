@@ -8,7 +8,7 @@ This project involved implementing two different forms of a Deque, which is a do
 
 ## Huffman Coding Algorithm
 
-The goal of this project was to implement a version of Huffman's coding algorithm for the compression and decompression of input files. The bulk of these algorithms are contained within the "main" methods of Huff.java and Puff.java. All other java files contain either interfaces for or implementations of various ADTs used to facilitate the compression and decompression processes. Among these include ADTs for: Huffman Coding Trees, Symbol Tables, Bit Strings, and more. To perform a compression, try passing any of the sample .txt files as command line inputs to Huff.java, like so:
+This application implements a version of Huffman's coding algorithm for the compression and decompression of input files. The bulk of these algorithms are contained within the "main" methods of Huff.java and Puff.java. All other java files contain either interfaces for or implementations of various ADTs used to facilitate the compression and decompression processes. Among these include ADTs for: Huffman Coding Trees, Symbol Tables, Bit Strings, and more. To perform a compression, try passing any of the sample txt files as command line inputs to Huff.java, like so:
 
 ``` 
 javac Huff.java
@@ -24,7 +24,7 @@ java Puff ../samples/mississippi.zip
 
 ## Infix Expression Evaluator
 
-This project involved the creation of an application that can accept infix arithmetic expressions as command-line inputs and print out the resulting evaluation. The application is based on Djikstra's two stack algorithm, and all of its code is contained within Evaluate.java. To simplify the code, this implementation assumes that input expressions containing operators are enclosed in outer parentheses, and that all symbols have spaces on either side of them.
+This application accepts infix arithmetic expressions as command-line inputs and prints out the resulting evaluations. The algorithm is based on Djikstra's two stack algorithm, and all of its code is contained within Evaluate.java. To simplify the code, this implementation assumes that input expressions containing operators are enclosed in outer parentheses, and that all symbols have spaces on either side of them.
 
 To evaluate an infix expression, try entering these commands:
 
@@ -38,7 +38,7 @@ NOTE: be sure to hit (ctrl-d) on your keyboard after entering the above commands
 
 ## Markov Natural Language Processing Models
 
-The goal of this project was to implement a character-based Markov model to generate randomized text outputs based off text inputs. This application includes a user interface, which has been implemented within Main.java and Shannon.java. I have additionally implemented a word-based model for more accurate output generation, which is contained within WordModelC.java. For more details about Markov models their probablistic theory, see the underlying README.md file for this directory.
+This application implements a character-based Markov model to generate randomized text outputs based off sample text inputs. This application includes a user interface, which has been implemented within Main.java and Shannon.java. I have additionally implemented a word-based model for more accurate output generation, which is contained within WordModelC.java. For more details about Markov models their probablistic theory, see the underlying README.md file for this directory.
 
 ## Priority Queue ADT
 
@@ -46,7 +46,7 @@ This is an implementation of a max priority queue using a linked binary heap. Th
 
 ## Rational Numbers ADT
 
-This is an implementation of an ADT for representing rational numbers, such as `5/3`. The interface includes methods for creating, comparing, and performing basic arithmetic operations on these objects. In order to always store the most simplified version of a rational number, this implementation utilizes Euclid's algorithm for finding the greatest common divisor of two numbers.
+This is an implementation of an ADT for representing rational numbers, such as `5/3`. The related interface includes methods for creating, comparing, and performing basic arithmetic operations on these objects. In order to always store the most simplified version of a rational number, this implementation utilizes Euclid's algorithm for finding the greatest common divisor of two numbers.
 
 
 
