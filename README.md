@@ -1,10 +1,10 @@
 # CSII –– Data Structures and Algorithms
 
-This is a collection of all the programs I have written throughout _Computer Science II_, a java-based course focused on data structures and algorithms. Some projects are applications that utilize Abstract Data Types (ADT) to solve some problem. Others involve implementing those ADTs myself. Many projects are a combination of both. Here is a brief overview of all the projects I have completed thus far:
+This is a collection of all the programs I have written throughout _Computer Science II_, a java-based course focused on data structures and algorithms. Some projects are applications that utilize Abstract Data Types (ADT) to solve a problem. Others involve implementing those ADTs myself. Many projects are a combination of both. Here is a brief overview of all the projects I have completed thus far:
 
 ## Deque ADTs
 
-This project involved implementing two different forms of a Deque, which is a double-sided Queue. The first is a linked implementation that utilizes a Node ADT to create a doubly-linked list. The second uses a circular resizing array as its underlying data structure.
+This is a collection of ADTs that implement two different forms of a Deque, which is a double-sided Queue. The first is a linked implementation that utilizes a Node ADT to create a doubly-linked list. The second uses a circular resizing array as its underlying data structure.
 
 ## Huffman Coding Algorithm
 
