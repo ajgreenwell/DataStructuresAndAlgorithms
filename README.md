@@ -2,7 +2,7 @@
 
 This is a collection of all the programs I have written throughout _Computer Science II_, a java-based course focused on data structures and algorithms. Some projects are applications that utilize Abstract Data Types (ADT) to solve some problem. Others involve implementing those ADTs myself. Many projects are a combination of both. Here is a brief overview of all the projects I have completed thus far:
 
-## Deque ADTS
+## Deque ADTs
 
 This project involved implementing two different forms of a Deque, which is a double-sided Queue. The first is a linked implementation that utilizes a Node ADT to create a doubly-linked list. The second uses a circular resizing array as its underlying data structure.
 
@@ -21,4 +21,32 @@ If you'd like to perform a decompression, try passing in the resulting .zip file
 javac Puff.java
 java Puff ../samples/mississippi.zip
 ```
+
+## Infix Expression Evaluator
+
+This project involved the creation of an application that can accept infix arithmetic expressions as command-line inputs and print out the resulting evaluation. The application is based on Djikstra's two stack algorithm, and all of its code is contained within Evaluate.java. To simplify the code, this implementation assumes that input expressions containing operators are enclosed in outer parentheses, and that all symbols have spaces on either side of them.
+
+To evaluate an infix expression, try entering these commands:
+
+```
+javac Evaluate.java
+java Evaluate
+( 5 * 3 + 2 )
+```
+
+NOTE: be sure to hit (ctrl-d) on your keyboard after entering the above commands. Otherwise, your expression may not be evaluated.
+
+## Markov Natural Language Processing Models
+
+The goal of this project was to implement a character-based Markov model to generate randomized text outputs based off text inputs. This application includes a user interface, which has been implemented within Main.java and Shannon.java. I have additionally implemented a word-based model for more accurate output generation, which is contained within WordModelC.java. For more details about Markov models their probablistic theory, see the underlying README.md file for this directory.
+
+## Priority Queue ADT
+
+This is an implementation of a max priority queue using a linked binary heap. These data structures are often implemented in practice using a resizing array, rather than a linked structure. In order to traverse the heap and find the necessary nodes for insertion and removal, this implementation utilizes a private, recursive method called findNodeAt().
+
+## Rational Numbers ADT
+
+This is an implementation of an ADT for representing rational numbers, such as `5/3`. The interface includes methods for creating, comparing, and performing basic arithmetic operations on these objects. In order to always store the most simplified version of a rational number, this implementation utilizes Euclid's algorithm for finding the greatest common divisor of two numbers.
+
+
 
