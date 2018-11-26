@@ -8,7 +8,7 @@ This is a collection of ADTs that implement two different forms of a Deque, whic
 
 ## Huffman Coding Algorithm
 
-This application implements a version of Huffman's coding algorithm for the compression and decompression of input files. The bulk of these algorithms are contained within the "main" methods of Huff.java and Puff.java. All other java files contain either interfaces for or implementations of various ADTs used to facilitate the compression and decompression processes. Among these include ADTs for: Huffman Coding Trees, Symbol Tables, Bit Strings, and more. To perform a compression, try passing any of the sample txt files as command line inputs to Huff.java, like so:
+This application implements a version of the Huffman coding algorithm for the compression and decompression of input files. The bulk of these algorithms are contained within the "main" methods of Huff.java and Puff.java. All other java files contain either interfaces for or implementations of various ADTs used to facilitate the compression and decompression processes. Among these include ADTs for: Huffman Coding Trees, Symbol Tables, Bit Strings, and more. To perform a compression, try passing any of the sample txt files as command line inputs to Huff.java, like so:
 
 ``` 
 javac Huff.java
@@ -38,7 +38,7 @@ NOTE: be sure to hit (ctrl-d) on your keyboard after entering the above commands
 
 ## Markov Natural Language Processing Models
 
-This application implements a character-based Markov model to generate randomized text outputs based off sample text inputs. This application includes a user interface, which has been implemented within Main.java and Shannon.java. I have additionally implemented a word-based model for more accurate output generation, which is contained within WordModelC.java. For more details about Markov models their probablistic theory, see the underlying README.md file for this directory.
+This application implements a character-based Markov model to generate randomized text outputs based off sample text inputs. This application includes a user interface, which has been implemented within Main.java and Shannon.java. I have additionally implemented a word-based model for more accurate output generation, which is contained within WordModelC.java. For more details about Markov models and their probablistic theory, see the underlying README.md file for this directory.
 
 ## Priority Queue ADT
 
